@@ -1,0 +1,26 @@
+/* src/admin/User.css */
+.admin-all-packages {
+  padding: 20px;
+}
+
+.admin-all-packages h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.admin-all-packages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-all-packages li {
+  background: #f4f4f4;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.admin-all-packages img {
+  margin-top: 8px;
+  border-radius: 5px;
+}

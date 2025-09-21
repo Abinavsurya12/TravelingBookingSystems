@@ -1,0 +1,272 @@
+/* === Layout === */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 220px;
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 14px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  padding: 10px 14px;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+/* === Main Content === */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* === Form Section === */
+.form-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  height: 530px;
+}
+
+
+
+
+
+.form-section h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.package-form input,
+.package-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.package-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #005fcc;
+}
+
+.preview-img {
+  margin: 10px 0;
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* === Table Section === */
+.table-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 90px;
+}
+
+.table-section h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background: #0077ff;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:hover {
+  background: #f1f5ff;
+}
+
+/* === Buttons === */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.edit-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #e68900;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+
+/* === Bookings Table (Extra Styling) === */
+.bookings-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+.bookings-section h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #1a1a2e;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bookings-table thead {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.bookings-table th,
+.bookings-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.bookings-table tr:hover {
+  background: #f9f9ff;
+}
+
+.status-confirmed {
+  color: #10b981; /* green */
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color: #ef4444; /* red */
+  font-weight: bold;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0 3px;
+  transition: 0.2s;
+}
+
+.action-btn.confirm {
+  background: #10b981;
+  color: #fff;
+}
+
+.action-btn.confirm:hover {
+  background: #059669;
+}
+
+.action-btn.cancel {
+  background: #ef4444;
+  color: #fff;
+}
+
+.action-btn.cancel:hover {
+  background: #dc2626;
+}
+/* === Booking Status === */
+.status-confirmed {
+  color: #0f9d58;
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #ff9800;
+  font-weight: bold;
+}

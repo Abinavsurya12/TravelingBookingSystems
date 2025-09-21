@@ -1,0 +1,150 @@
+/* Add a subtle gradient background */
+.travel-blog {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Add a subtle underline animation to the heading */
+.travel-blog h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.travel-blog h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: #ff6b6b;
+  left: 25%;
+  bottom: -10px;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.travel-blog h2:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Blog grid with smooth fade-in */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.3s;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Slightly scale up and add shadow on hover */
+.blog-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Zoom image on card hover */
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+.blog-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.blog-content .date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+/* Style the read more button with a subtle shadow */
+.read-more {
+  background:black;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.6);
+}
+
+.read-more:hover {
+  background: #ff4c4c;
+  box-shadow: 0 6px 20px rgba(255, 76, 76, 0.8);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .travel-blog h2 {
+    font-size: 1.8rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .blog-content p {
+    font-size: 0.9rem;
+  }
+}

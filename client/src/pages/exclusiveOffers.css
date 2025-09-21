@@ -1,0 +1,125 @@
+.exclusive-offers {
+  padding: 60px 0;
+  background: #ffffff; 
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  
+ color: black;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+.offer-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.offer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.offer-card:hover::before {
+  opacity: 1;
+}
+
+.offer-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.offer-card:hover img {
+  transform: scale(1.08);
+}
+
+.offer-content {
+  padding: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.offer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.offer-content p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 14px;
+}
+
+.price {
+  display: block;
+  font-weight: 700;
+  color:black;
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+}
+
+.offer-content .btn-book:hover {
+  background-color: rgb(226, 170, 2);
+  color: black;
+  transition: all 0.3s ease;
+}
+.offer-content .btn-book {
+  width: 110px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.offer-content .btn-book:hover {
+  background-color: rgb(226, 170, 2);
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(226,170,2,0.22);
+}
+

@@ -1,0 +1,48 @@
+.footer {
+  background: black;
+  color: #fff;
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent);
+  animation: rotateBackground 20s linear infinite;
+}
+
+@keyframes rotateBackground {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+  padding: 0 25px;
+  z-index: 1;
+  position: relative;
+}
+
+.footer-brand h2 {
+  color: #ffcc00;
+}
+.footer-links li{
+  list-style: none;
+  color: white  ;
+}
+ul li a {
+  color: white;
+}
+ul li a:hover {
+  color: yellow;
+}
+
+

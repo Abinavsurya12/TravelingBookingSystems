@@ -1,0 +1,111 @@
+[
+  {
+    "id": "trip1",
+    "name": "Bali ",
+    "price": 45000.00,
+    "img": "./images/bali.jpg",
+    "categories": "Beach",
+    "duration": "5 Days / 4 Nights",
+    "location": "Bali, Indonesia",
+    "reviews": 5,
+    "paymentlink":"https://buy.stripe.com/test_28EdR9eFS6EOaazfefbfO00"
+  },
+  {
+    "id": "trip2",
+    "name": "Dubai  Adventure",
+    "price": 60000.00,
+    "img": "./images/dubai.jpeg",
+    "categories": "Adventure",
+    "duration": "4 Days / 3 Nights",
+    "location": "Dubai, UAE",
+    "reviews":4,
+    
+    "paymentlink":"https://buy.stripe.com/test_fZu28rdBO2oy4QfgijbfO01"
+  },
+  {
+    "id": "trip3",
+    "name": "Romantic Paris Getaway",
+    "price": 85000.00,
+    "img": "./images/paris.jpg",
+    "categories": "Romantic",
+    "duration": "6 Days / 5 Nights",
+    "location": "Paris, France",
+     "reviews": 3,
+     "paymentlink":"https://buy.stripe.com/test_fZu8wP1T62oy3MbeabbfO02"
+  },
+  {
+    "id": "trip4",
+    "name": "Goa Party Nights",
+    "price": 20000.00,
+    "img": "./images/goaa.png",
+    "categories": "Beach",
+    "duration": "3 Days / 2 Nights",
+    "location": "Goa, India",
+     "reviews": 5 ,
+     "paymentlink":"https://buy.stripe.com/test_aFa5kD9lyaV43Mb8PRbfO03"
+  },
+  {
+    "id": "trip5",
+    "name": "Singapore Family",
+    "price": 55000.00,
+    "img": "./images/singapore.jpeg",
+    "categories": "Family",
+    "duration": "5 Days / 4 Nights",
+    "location": "Singapore",
+     "reviews": 3,
+     "paymentlink":"https://buy.stripe.com/test_eVq3cveFSgfo6YnfefbfO04"
+  },
+  {
+    "id": "trip6",
+    "name": "Himalayan Trekking ",
+    "price": 30000.00,
+    "img":"./images/tour-img04.jpg",
+    "categories": "Adventure",
+    "duration": "7 Days / 6 Nights",
+    "location": "Manali, India",
+    "paymentlink":"https://buy.stripe.com/test_14A5kD9ly6EO96v7LNbfO05"
+  },
+  {
+    "id": "trip7",
+    "name": "Kerala Backwater Cruise",
+    "price": 40000.00,
+    "img":"./images/kerala.jpg",
+    "categories": "Relaxation",
+    "duration": "5 Days / 4 Nights",
+    "location": "Kerala, India",
+    "offer": true,
+    "paymentlink":"https://buy.stripe.com/test_eVqcN569me7gfuTeabbfO06"
+  },
+  {
+    "id": "trip8",
+    "name": "Thailand Island Hopping",
+    "price": 50000.00,
+    "img": "./images/thailand.jpg",
+    "categories": "Beach",
+    "duration": "6 Days / 5 Nights",
+    "location": "Phuket, Thailand",
+    "offer":true,
+    "paymentlink":"https://buy.stripe.com/test_6oU28rfJW7IS0zZ7LNbfO07"
+  },
+  {
+    "id": "trip9",
+    "name": "Maldives Luxury Resort",
+    "price": 120000.00,
+    "img": "./images/maldives.jpeg",
+    "categories": "Luxury",
+    "duration": "5 Days / 4 Nights",
+    "location": "Maldives",
+    "offer":true,
+    "paymentlink":"https://buy.stripe.com/test_cNi5kD69m8MW5Uj1npbfO08"
+  },
+  {
+    "id": "trip9",
+    "name": "China",
+    "price": 120000.00,
+    "img": "./images/china.jpg",
+    "categories": "Luxury",
+    "duration": "5 Days / 4 Nights",
+    "location": "Maldives"
+  }
+  
+]
